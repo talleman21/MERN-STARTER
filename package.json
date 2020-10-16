@@ -1,0 +1,22 @@
+{
+  "name": "fsa",
+  "version": "1.0.0",
+  "description": "Initial setup for a full stack *ERN app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"NODE_ENV=DEVELOPMENT nodemon server.js\" \"yarn --cwd client dev \"",
+    "devWin": "concurrently \"set NODE_ENV=DEVELOPMENT && nodemon server.js\" \"yarn --cwd client dev \"",
+    "install-all": "yarn && yarn --cwd client ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "talleman",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.5"
+  }
+}
